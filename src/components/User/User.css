@@ -1,0 +1,80 @@
+.section{
+    width: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.userBody{
+    /* display: flex; */
+    padding: 20px;
+}
+.details{
+    color: grey;
+    line-height: 1.7;
+}
+.links{
+    line-height: 1.7;
+}
+.name{
+    font-size: 25px;
+    color: black;
+}
+.linksIcon{
+    margin-right: 3px;
+    font-size: 20px;
+}
+.userDetails{
+    padding: 20px;
+}
+.links p,.links a{
+    display: flex;
+    align-items: center;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(0, 174, 255);
+}
+.followbtn a{
+    border: 2px solid blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.followbtn a:hover{
+    background-color: blue;
+    animation: mymove 1.5s infinite;
+}
+@keyframes mymove{
+    from{
+        background-color: white;
+        color: black;
+    }
+    to{
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media screen and (max-width:835px){
+    .section{
+        width: 100%;
+        margin: 10px 10px;
+    }
+    .section-center {
+        width: 100%;
+    }
+    .userBody{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
